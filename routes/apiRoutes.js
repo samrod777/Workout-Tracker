@@ -70,6 +70,7 @@ module.exports = (app) => {
             res.json(dbWorkout);
         })
         .catch(err => {
+            console.log("workouts range error", err)
             res.json(err);
         });
     });
